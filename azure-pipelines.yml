@@ -21,3 +21,9 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: Docker@2
+  inputs:
+    containerRegistry: 'pfyangf-dockerhub-private'
+    repository: 'DevOps-demo'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
