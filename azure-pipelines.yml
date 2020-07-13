@@ -31,4 +31,11 @@ steps:
     repository: 'shenshenshou'
     command: 'build'
     Dockerfile: 'Dockerfile'
-    tags: 'shenshenshou/$(Build.BuildId)'
+    tags: 'shenshenshou'
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'pfyangf-dockerhub-private'
+    repository: 'shenshenshou'
+    command: 'push'
+    tags: 'shenshenshou'
