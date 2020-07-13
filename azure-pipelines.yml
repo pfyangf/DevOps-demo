@@ -26,4 +26,4 @@ steps:
     containerRegistry: 'pfyangf-dockerhub-private'
     repository: 'DevOps-demo'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: 'Dockerfile'
