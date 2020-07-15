@@ -28,14 +28,14 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'pfyangf-dockerhub-private'
-    repository: 'shenshenshou'
+    repository: 'dev-ops-demo'
     command: 'build'
     Dockerfile: 'Dockerfile'
-    tags: 'shenshenshou'
+    tags: 'shenshenshou/dev-ops-demo'
 
 - task: Docker@2
   inputs:
     containerRegistry: 'pfyangf-dockerhub-private'
-    repository: 'shenshenshou'
+    repository: 'dev-ops-demo'
     command: 'push'
-    tags: 'shenshenshou'
+    tags: 'shenshenshou/dev-ops-demo'
