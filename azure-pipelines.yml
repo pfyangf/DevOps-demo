@@ -29,4 +29,4 @@ steps:
     repository: 'dev-ops-demo'
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
-    tags: 'shenshenshou/dev-ops-demo'
+    tags: 'shenshenshou'
