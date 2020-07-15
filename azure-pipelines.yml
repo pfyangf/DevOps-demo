@@ -26,7 +26,7 @@ steps:
   displayName: build images and push to registry
   inputs:
     containerRegistry: 'pfyangf-dockerhub-private'
-    repository: 'dev-ops-demo:$(Build.BuildId)'
+    repository: 'dev-ops-demo'
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
-    tags: 'shenshenshou/dev-ops-demo:$(Build.BuildId)'
+    tags: 'shenshenshou/dev-ops-demo'
